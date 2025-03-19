@@ -52,20 +52,6 @@ Then, open `http://localhost:8080` in your browser.
 - Click **Download Image** to save the background image.
 - Click **Post on X** to share the quote on X (Twitter).
 
-## Troubleshooting
-
-### "Uncaught SyntaxError: Cannot use import statement outside a module"
-Make sure to add `type="module"` in `index.html`:
-```html
-<script type="module" src="index.js"></script>
-```
-
-### "Failed to resolve module specifier 'html2canvas'"
-Use a CDN import in `index.js`:
-```js
-import html2canvas from "https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/+esm";
-```
-
 ## License
 This project is licensed under the MIT License.
 
